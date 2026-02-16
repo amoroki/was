@@ -70,7 +70,20 @@ export function Footer() {
             <a href="#" className="hover:text-[#C5A065]"><Linkedin size={20} /></a>
           </div>
         </div>
-
+      </div>
+      <div className="w-full border-t border-white mt-16"></div>
+      {/* Copyright & Credits */}
+      <div className="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <p>&copy; {new Date().getFullYear()} Woodborough Admin Services. All rights reserved.</p>
+        <div className="flex items-center space-x-4 mt-3 md:mt-0">
+          <nav className="flex items-center space-x-4">
+            <a href="/privacy-policy" className="hover:text-[#C5A065] hover:underline">Privacy Policy</a>
+            <span className="text-gray-400">·</span>
+            <a href="/terms" className="hover:text-[#C5A065] hover:underline">Terms &amp; Conditions</a>
+          </nav>
+          <span className="hidden md:inline">|</span>
+          <span>Designed by <a href="https://amoroki.co.ke" target="_blank" rel="noopener noreferrer" className="text-[#C5A065] hover:underline">Amoroki</a></span>
+        </div>
       </div>
     </footer>
   );
